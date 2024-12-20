@@ -24,13 +24,28 @@ const getRandomNumber = (max) => {
     return Math.ceil(Math.random()*max);
 };
 
+function computerPlay(){
+    const randomNum = getRandomNumber(9);
+    
+    let computerPlay = '';
+    if(randomNum <=3){
+        computerPlay = 'piedra';
+    }else if(randomNum >=7){
+        computerPlay = 'papel';
+    }else{
+        computerPlay = 'tijera';
+    };
+    console.log(computerPlay);
+};
+
+
+
 //recoge opción elegida por la usuaria
 function handleClick(event){
     event.preventDefault();
     const valueSelect =  optionSelect.value; 
     // console.log(valueSelect);
-    getRandomNumber(9);
-     // console.log(getRandomNumber(9));
+    computerPlay();
 };
 
 btn.addEventListener('click', handleClick);
