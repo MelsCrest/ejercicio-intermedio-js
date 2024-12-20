@@ -19,10 +19,18 @@ querySelector('.js-result-msg');
 const playerPoints = document.querySelector('.js-player-points');
 const computerPoints = document.querySelector('.js-computer-points');
 
+//generar número aleatorio
+const getRandomNumber = (max) => {
+    return Math.ceil(Math.random()*max);
+};
+
+//recoge opción elegida por la usuaria
 function handleClick(event){
     event.preventDefault();
-    const valueSelect =  optionSelect.value; //recoge opción elegida por la usuaria
-    console.log(valueSelect);
+    const valueSelect =  optionSelect.value; 
+    // console.log(valueSelect);
+    getRandomNumber(9);
+     // console.log(getRandomNumber(9));
 };
 
 btn.addEventListener('click', handleClick);
