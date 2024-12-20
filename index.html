@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio Intermedio JS</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Juego Piedra, Papel y Tijera</h1>
-    <h2>Introduce aquí tu jugada:</h2>
-    <form>
-        <select class="js-select-option">
-            <option value="default">Seleccione su jugada</option>
-            <option value="stone">Piedra</option>
-            <option value="paper">Papel</option>
-            <option value="scissor">Tijera</option>
-        </select>
-        <button class="js-btn">Jugar</button>
-    </form>
-    <p class="js-result-msg">Vamos a Jugar!</p>
-    <p>Jugador: <span class="js-player-points"></span></p>
-    <p>Computadora: <span class="js-computer-points"></span></p>
+    <section class="container">
+        <h1 class="title">Juego Piedra, Papel y Tijera</h1>
+        <h2 class="subtitle">Introduce aquí tu jugada:</h2>
+        <form class="form">
+            <select class="js-select-option select">
+                <option value="default">Seleccione su jugada</option>
+                <option value="stone">Piedra</option>
+                <option value="paper">Papel</option>
+                <option value="scissor">Tijera</option>
+            </select>
+            <button class="js-btn btn">Jugar</button>
+        </form>
+        <p class="js-result-msg result">Vamos a Jugar!</p>
+        <div class="paragraphs">
+            <p>Jugador: <span class="js-player-points points">0</span></p>
+            <p>Computadora: <span class="js-computer-points points">0</span></p>
+        </div>
+    </section>
 
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
